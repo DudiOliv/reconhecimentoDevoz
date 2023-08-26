@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.speech {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(221, 4, 250,1), #6f2479);
+}
+
+p{
+    color: #f2f2f2;
+    font-size: 3rem;
+}
+
+textarea {
+    width: 80%;
+    height: 40%;
+    margin: 50px auto;
+    padding: 1rem;
+    border: 2px transparent;
+    box-shadow: 2px 2px 5px 5px;
+    border-radius: 2px;
+    outline: 0;
+    text-align: justify;
+}
+
+textarea::-webkit-scrollbar{
+    width: 12px;
+    background-color: rgb(235, 228, 228);
+}
+
+textarea::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(221, 4, 250,1);
+}
+
+.fas {
+    background-color: transparent !important;
+    backdrop-filter: blur(12px);
+    font-weight: 600;
+    font-size: 3rem;
+    min-width: 4rem;
+    color: #0f0cc7;
+    border-radius: 2px;
+}
+.btnClear{
+    color: rgba(231, 37, 37, 0.911);
+}
+button {
+    padding: 15px;
+    margin: 4px;
+    background-color: transparent;
+    backdrop-filter: blur(12px);
+    border: 2px transparent;
+    box-shadow: 0px 0px 5px 3px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button:hover{
+    background-color: #000000;
+    backdrop-filter: blur(12px);
+    border: 2px transparent;
+    box-shadow: 0px 0px 5px 3px;
+}
+
+@media (max-width: 700px) {
+    P{
+        font-size: 2rem;
+    }
+    .fas {
+        min-width: 3rem;
+    }
+}
+
+
+
